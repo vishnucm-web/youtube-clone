@@ -1,0 +1,362 @@
+.hamburger{
+   width:20px;
+   border:1px solid black;
+   margin-bottom: 4px;
+}
+body{
+   margin:0;
+   padding:0;
+   width:100%;
+   display:flex;
+}
+a{
+   text-decoration: none;;
+   color:black;
+}
+#sidenav{
+   display:grid;
+   width:250px;
+   grid-template-rows: 50px repeat(14,50px);
+   grid-template-columns:80px 250px;
+   grid-template-areas: "hamburger-icon youtube-logo"
+   "home-img home-link"
+   "explore-img explore-link"
+   "subscription-img subscription-link"
+   "library-img library-link"
+   "history-img history-link"
+   "yourvideo-img yourvideo-link"
+   "watchlater-img watchlater-link"
+   "likedvideos-img likedvideos-link"
+   "showmore-img showmore-link"
+   "subscriptions ."
+   "adda247-img adda247-link"
+   "adithya-img adithya-link"
+   "asianetnews-img asianetnews-link";
+}   
+
+#topmenu{
+   margin-left:0px;
+   width:100%;
+   margin-top:10px;
+   display:grid;
+   grid-template-rows: 100%;
+   grid-template-columns: 100px 650px 50px 50px 50px 50px 50px 50px 50px;
+   grid-template-areas:". text-input search-icon voiceicon . videoicon googleicon notification usericon";
+}
+#mainmenu{
+   margin-left:0px;
+   width:100%;
+   margin-top:20px;
+   margin-bottom:20px;
+   display:grid;
+   grid-template-rows: 100%;
+   grid-template-columns: 100px 200px 100px 200px 200px 150px 100px 100px;
+   grid-template-areas:"all brave_new_world mantras meditation madhu_balakrishnan mysteries angular moreitems";
+}
+#all{
+   grid-area:all;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   background-color: grey;;
+   color:white;
+}
+#brave_new_world{
+   grid-area:brave_new_world;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#mantras{
+   grid-area:mantras;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#meditation{
+   grid-area:meditation;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#madhu_balakrishnan{
+   grid-area:madhu_balakrishnan;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#mysteries{
+   grid-area:mysteries;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#angular{
+   grid-area:angular;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#moreitems{
+   grid-area:moreitems;
+   justify-self: center;
+   align-self: center;
+   padding:10px 20px 10px 20px;
+   border:1px solid lightgrey;
+   border-radius:20px;
+   color:black;
+}
+#videos{
+   display:grid;
+   grid-template-rows: 200px 200px;
+   grid-template-columns: 300px 50px 300px 50px 300px 50px;
+   grid-template-areas:"youtube_1 . youtube_2 . youtube_3 ."
+   ". . . . . ."
+   "youtube_4 . youtube_5 . youtube_6 .";
+}
+#youtube_1{
+   grid-area:youtube_1;
+   justify-self: center;
+   align-self: start;
+}
+#youtube_2{
+   grid-area:youtube_2;
+   justify-self: center;
+   align-self: start;
+}
+#youtube_3{
+   grid-area:youtube_3;
+   justify-self: center;
+   align-self: start;
+}
+#youtube_4{
+   grid-area:youtube_4;
+   justify-self: center;
+   align-self: start;
+}
+#youtube_5{
+   grid-area:youtube_5;
+   justify-self: center;
+   align-self: start;
+}
+#youtube_6{
+   grid-area:youtube_6;
+   justify-self: center;
+   align-self: start;
+}
+#text-input{
+   padding:5px;
+   width:100%;
+}
+#mainmenu{
+   grid-area:mainmenu;
+   justify-self: center;
+   align-self: center;
+}
+#home-img{
+   grid-area:home-img;
+   justify-self: center;
+   align-self: center;
+}
+#usericon{
+   grid-area:usericon;
+   justify-self: center;
+   align-self: center;
+}
+#videoicon{
+   grid-area:videoicon;
+   justify-self: center;
+   align-self: center;
+}
+#notification{
+   grid-area:notification;
+   justify-self: center;
+   align-self: center;
+}
+#googleicon{
+   grid-area:googleicon;
+   justify-self: center;
+   align-self: center;
+}
+#voiceicon{
+   grid-area:voiceicon;
+   justify-self: center;
+   align-self: center;
+}
+
+#explore-link{
+   grid-area:explore-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#explore-img{
+   grid-area:explore-img;
+   justify-self: center;
+   align-self: center;
+}
+
+
+#subscription-link{
+   grid-area:subscription-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#subscription-img{
+   grid-area:subscription-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#library-link{
+   grid-area:library-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#library-img{
+   grid-area:library-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#home-link{
+   grid-area:home-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#yourvideo-img{
+   grid-area:yourvideo-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#yourvideo-link{
+   grid-area:yourvideo-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#history-img{
+   grid-area:history-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#history-link{
+   grid-area:history-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#watchlater-img{
+   grid-area:watchlater-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#watchlater-link{
+   grid-area:watchlater-link;
+   justify-self: start;
+   align-self: center;
+}
+#subscriptions{
+   grid-area:subscriptions;
+   justify-self: start;
+   margin-left:30px;
+   align-self: center;
+}
+
+#adda247-img{
+   grid-area:adda247-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#adda247-link{
+   grid-area:adda247-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#adithya-img{
+   grid-area:adithya-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#adithya-link{
+   grid-area:adithya-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#asianetnews-img{
+   grid-area:asianetnews-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#asianetnews-link{
+   grid-area:asianetnews-link;
+   justify-self: start;
+   align-self: center;
+}
+#likedvideos-img{
+   grid-area:likedvideos-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#likedvideos-link{
+   grid-area:likedvideos-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#showmore-img{
+   grid-area:showmore-img;
+   justify-self: center;
+   align-self: center;
+}
+
+#showmore-link{
+   grid-area:showmore-link;
+   justify-self: start;
+   align-self: center;
+}
+
+#youtube-logo{
+   grid-area:youtube-logo;
+   justify-self: start;
+   align-self: center;
+}
+
+#hamburger-icon{
+   grid-area:hamburger-icon;
+   justify-self: center;
+   align-self: center;
+}
+
